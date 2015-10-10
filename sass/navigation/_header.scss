@@ -1,0 +1,155 @@
+////
+/// This file contains all of the header related information
+/// @author Chris King
+/// @group yv4
+////
+
+///The wrapper around the header menu
+.yvMenuContainer{
+    background-color: $visionColor;
+    ///scrolling navigation
+    .navWrapper{
+        background-color: darken($visionColor, 10%);
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        max-height:em(40);
+    }
+    nav.mainMenu{
+        @include yv-Outer-Container();
+        display: block;
+        ul{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 0px;
+            @include media($desktop, 12) {
+                @include span-columns(10);
+            }
+        }
+        .nav-item{
+            opacity: 1;
+        }
+        @include prefixer(transition,max-height 0.5s, webkit moz ms spec );
+        &.tucked{
+            @include prefixer(transition,max-height 0.5s, webkit moz ms spec );
+            max-height: em(0);
+            overflow: hidden;
+            .nav-item{
+                opacity: 0;
+                opacity: 1\9;
+                @include media($desktop, 12) {
+                    opacity: 1;
+                }
+            }
+            @include media($desktop, 12) {
+                max-height: em(40);
+            }
+        }
+    }
+    /// CSS for the Brand Image
+    .mobileLogo{
+        width:auto;
+        max-height: em(60);
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 700;
+        color:$headerTextColour;
+        padding: 13px 24px 12px;
+        display:block;
+        margin: 0 auto;
+        @include media($desktop) {
+            display:none;
+        }
+    }
+    ///Styling for each of the items in the menu
+    .nav-item {
+      color: $headerTextColour;
+      padding: 13px 16px 12px;
+    }
+    /// Colour change for the Logo wrapper
+    .yvBrand {
+      @include yv-Outer-Container();
+      z-index: 150;
+    }
+    .navWrapper{
+        z-index: 10;
+        > .tucked{
+            z-index: -1;
+        }
+    }
+
+}
+
+.desktopLogo{
+    display:none;
+    @include media($desktop, 12) {
+        display:inline-block;
+        padding: 10px;
+    }
+}
+
+
+///Ensure that everything is aligned
+.mobileLogo,
+.nav-item,
+.mainMenu {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+///Creating the hamburger menu
+.hamburger{
+    width: 57px;
+    height: 57px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    @include media($desktop) {
+        display:none;
+    }
+    ///styling each of the bars in the hamburger
+    .bar{
+        background-color: white;
+        display: block;
+        width: 30px;
+        height: 4px;
+        border-radius: 100px;
+        position: absolute;
+        top: 28px;
+        right: 12px;
+
+        @include prefixer(transition, all 0.5s, webkit moz ms spec);
+        /// Move the first bar up a little
+        &:first-child {
+            @include prefixer(transform, translateY(em(-10px)), webkit moz ms spec);
+        }
+    }
+
+    /// if there is the class x then the hamburger should be in an X shape
+    &.x{
+        ///Angle each of the bars
+        .bar{
+            @include prefixer(transform, rotate(45deg), webkit moz ms spec);
+            &:first-child{
+                @include prefixer(transform, rotate(-45deg), webkit moz ms spec);
+            }
+        }
+    }
+}
+.advert{
+    display: none;
+    @include media($desktop) {
+        display: inline-block;
+        margin: 0 auto;
+        float:right;
+        max-height: em(120);
+        img{
+            max-height: em(120);
+            vertical-align: middle;
+        }
+    }
+}

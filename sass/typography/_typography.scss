@@ -1,0 +1,12 @@
+@import "headings";
+
+@import "copy";
+
+@include font-face("Roboto Condensed", "/fonts/Roboto-Condensed-Regular");
+@include font-face("Oswald", "/fonts/Oswald-Regular");
+body{
+    font-family: "Roboto Condensed", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oswald", sans-serif;
+}

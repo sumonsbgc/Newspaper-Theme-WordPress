@@ -1,0 +1,76 @@
+@import 'yv-media-queries';
+
+@mixin yv-Outer-Container() {
+    @include outer-container();
+    @include media($tablet, 8) {
+        @include outer-container($desktopWidth);
+    }
+    @include media($desktop, 12) {
+        @include outer-container(em(1088));
+    }
+}
+
+@mixin yv-span-columns($m, $t, $d) {
+    @include span-columns($m of 4);
+    @include media($tablet, 8) {
+        @include span-columns($t of 8);
+    }
+    @include media($desktop, 12) {
+        @include span-columns($d of 12);
+    }
+}
+
+@mixin yv-square(){
+    @include media($tablet, 8) {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+    }
+    @include media($desktop, 12) {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+    }
+}
+
+@mixin yv-card-text() {
+    padding-bottom: em(10);
+    padding-left: em(10);
+    @include media($tablet, 8) {
+        @include fill-parent();
+        padding: 5px;
+        color:white;
+        background-color: rgba(0,0,0, 0.64);
+        position: absolute;
+        bottom: 0px;
+    }
+    @include media($desktop, 12) {
+        @include fill-parent();
+        padding: 5px;
+        color:white;
+        background-color: rgba(0,0,0, 0.64);
+        position: absolute;
+        bottom: 0px;
+    }
+}
+
+@mixin yv-flex-setup(){
+
+    max-height:em(175);
+    @include flex-grow(1);
+    @include transition (all .2s ease-in-out);
+    @include margin(em(5) );
+    @include reset-display();
+    @include media($tablet, 12) {
+        max-height:none;
+        @include flex-basis(em(200));
+        min-width: em(200);
+        max-width: em(400);
+    }
+    @include media($desktop, 12) {
+        max-height:none;
+        @include flex-basis(em(300));
+        min-width: em(200);
+        max-width: em(400);
+    }
+}

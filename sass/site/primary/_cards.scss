@@ -1,0 +1,77 @@
+.category-title
+{
+    @include fill-parent();
+    @include margin(null em(5));
+    h2
+    {
+        & > span
+        {
+            border-bottom: em(5) red solid;
+
+            @include padding(null em(10));
+        }
+    }
+}
+.card-row
+{
+    @include display(flex);
+    @include flex-wrap(wrap);
+    &.first{
+        @include justify-content(center);
+    }
+    @include justify-content(space-between);
+}
+.card
+{
+    $card-color: #000;
+    $card-text: #fff;
+    $background-color:  rgba(0, 0, 0, 0.64);
+    overflow: hidden;
+
+    color: $card-text;
+    background: $background-color;
+    position: relative;
+
+    ///@todo need to ensure that the flex boxes don't get too arge
+    @include yv-flex-setup();
+    .card-wrapper{
+        @include yv-square();
+        .images-wrapper
+        {
+            @include yv-span-columns(2,8,12);
+            img{
+                    @include fill-parent();
+            }
+        }
+
+        .card-content
+        {
+            @include yv-card-text();
+            @include yv-span-columns(2,8,12);
+            h2
+            {
+                margin-top: em(0);
+
+                @include word-wrap(normal);
+            }
+        }
+    }
+
+}
+
+.card-cat{
+    margin-left: 1%;
+    display: inline;
+}
+.triangle
+{
+    @include triangle(em(12), red, right);
+    display: inline-block;
+    margin-right: 1%;
+    &.large
+    {
+        display: inline-block;
+        margin-right: 1%;
+        @include triangle(em(25), red, right);
+    }
+}

@@ -1,0 +1,77 @@
+.fullImageWrapper{
+    max-width: 100%;
+    img{
+        max-width: 100%;
+    }
+}
+.articleHeader{
+background-color: white;
+margin-bottom:em(16);
+h1{
+    @include fill-parent();
+     @include padding(em(10));
+     font-size: em(52);
+ }
+ .article-meta{
+     @include display(flex);
+     @include justify-content(space-between);
+     @include flex-wrap(wrap);
+     span{
+         @include flex-basis(12em);
+         @include flex-shrink(0);
+         i{
+             vertical-align: middle;
+             padding-right: em(2);
+         }
+         text-align: left;
+         @include media($tablet){
+             &#author{
+                 text-align: left;
+                 margin-left: em(10);
+             }
+             &#date{
+                 text-align: center;
+             }
+             &#social{
+                 text-align: right;
+                 margin-right: em(10);
+             }
+         }
+     }
+ }
+}
+
+.article{
+margin-right: em(10);
+background-color: white;
+margin-top:em(5);
+p{
+    @include padding(em(5));
+}
+footer{
+    @include fill-parent();
+    text-align: right;
+}
+}
+
+aside.excerpt{
+// display:inline-block;
+max-width:300px;
+float: left;
+clear: both;
+margin: em(5) em(50) 0 em(15);
+
+.excerpt-content{
+    font-weight: bold;
+    display:inline;
+    position: relative;
+    top: -5px;
+}
+}
+
+.comments-section{
+margin:em(40);
+}
+.triangle{
+display: inline-block;
+}

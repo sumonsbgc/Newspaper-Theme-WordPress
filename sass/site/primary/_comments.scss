@@ -1,0 +1,128 @@
+.comment-content a
+{
+    word-wrap: break-word;
+}
+#comments
+{
+    width:100%;
+    padding-right:em(10);
+}
+.bypostauthor
+{
+    display: block;
+}
+
+.comment
+{
+    $base-border-radius: 3px !default;
+    $base-spacing: 1.5em !default;
+    $action-color: #477dca !default;
+    $dark-gray: #333 !default;
+    $base-font-color: $dark-gray !default;
+    $comment-gutter: 1.4em;
+    $comment-image-padding: .7em;
+    $comment-image-width: 4em;
+    $comment-color: $base-font-color;
+    $comment-background: lighten($action-color, 15%);
+    $comment-detail-color: transparentize($comment-color, .5);
+    $comment-image-vert-alignment: top;
+    display: table;
+
+    width: 100%;
+    margin-bottom: $base-spacing;
+    padding-bottom: 1em;
+    .comment-image,
+    .comment-content
+    {
+        display: table-cell;
+
+        vertical-align: $comment-image-vert-alignment;
+    }
+
+    .comment-image
+    {
+        padding-right: $comment-gutter;
+
+        > img
+        {
+            display: block;
+
+            width: $comment-image-width;
+            max-width: none;
+            height: auto;
+        }
+
+        .comment-reverse-order &
+        {
+            padding-right: 0;
+            padding-left: 10px;
+        }
+    }
+
+    .comment-content
+    {
+        width: 100%;
+        padding: 10px;
+
+        background-color: white;
+
+        h1
+        {
+            font-size: 1em;
+
+            margin: 0 0 .5em 0;
+        }
+
+        p
+        {
+            line-height: 1.5em;
+
+            margin-bottom: .5em;
+        }
+
+        p.comment-detail
+        {
+            font-size: .9em;
+            font-style: italic;
+
+            display: inline-block;
+
+            color: $comment-detail-color;
+        }
+        p.comment-reply-link
+        {
+            font-size: .9em;
+            font-style: italic;
+
+            display: inline-block;
+            float: right;
+
+            color: $comment-detail-color;
+        }
+    }
+}
+.child-comments
+{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.depth-1
+{
+    $dark-gray: #333 !default;
+    $base-font-color: $dark-gray !default;
+    $comment-color: $base-font-color;
+    border-bottom: 1px solid transparentize($comment-color, .9);
+    &.parent
+    {
+        padding-bottom: 0;
+        li
+        {
+            padding-bottom: 0;
+        }
+    }
+}
+.depth-2.comment
+{
+    margin-bottom: 0;
+    padding-left: 10%;
+}

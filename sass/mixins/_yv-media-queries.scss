@@ -1,0 +1,22 @@
+////
+/// This is a post comment
+/// @group YV4
+/// @author Christopher King
+////
+
+/// This will be the value at which the tablet view will be activated
+/// @access public
+$tabletWidth: em(768);
+/// This will be the value at which the desktop view will be activated
+/// @access public
+$desktopWidth: em(1024);
+
+/// A media query string generated for the tablet with 8 columns
+/// @access public
+$grid-columns: 8 !global;
+$tablet: new-breakpoint(min-width $tabletWidth, $grid-columns);
+
+/// A media query string generated for the desktop with 12 columns
+/// @access public
+$grid-columns: 12 !global;
+$desktop: new-breakpoint(min-width $desktopWidth, $grid-columns);

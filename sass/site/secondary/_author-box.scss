@@ -1,0 +1,23 @@
+.author-box{
+    @include margin(em(5));
+    @include padding(em(5));
+    background-color: white;
+    .avatar{
+        @include padding(em(5));
+        @include yv-span-columns(4,3,3);
+        img{
+            margin:0 auto;
+            vertical-align: middle;
+            text-align: center;
+            display: block;
+            @include border-top-radius(50%);
+            @include border-bottom-radius(50%);
+            max-height: em(150);
+            max-width: em(150);
+            width:100%;
+        }
+    }
+    .author-meta{
+        @include yv-span-columns(4,5,9);
+    }
+}
