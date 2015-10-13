@@ -38,7 +38,7 @@
         ?>
         <div class = "card-row">
             <div class = "category-title">
-                <h2><span><?php echo $cat->slug;?></span></h2>
+                <h2><span class = "<?php echo $cat->slug; ?>"><?php echo $cat->name;?></span></h2>
             </div>
         <?php
         foreach($posts as $post){
