@@ -21,6 +21,7 @@ $color__border-abbr: #666;
 
 /// the Red used for the header and footer
 $visionColor: #CC0000;
+$newsColor: #A70009;
 $sportColor:#304408;
 $opinionColor: #7171C6;
 $featuresColor: #CB7835;
@@ -28,3 +29,38 @@ $columnsColor: #48FFFF;
 $sceneColor: #2255FF;
 /// Used on visionColor backgrounds
 $headerTextColour: #FFFFFF;
+
+$categoryColorMap : ("news":$newsColor,"sports":$sportColor,"opinion":$opinionColor,"features":$featuresColor,"columns":$columnsColor,"scene":$sceneColor );
+
+@each $cat, $color in $categoryColorMap {
+    .#{$cat}{
+        &.triangle
+        {
+            @include triangle(em(12), #{$color}, right);
+            display: inline-block;
+            margin-right: 1%;
+            &.large
+            {
+                display: inline-block;
+                margin-right: 1%;
+                @include triangle(em(25), #{$color}, right);
+            }
+        }
+    }
+    .category-title
+    {
+        @include fill-parent();
+        @include margin(null em(5));
+        h2
+        {
+            & > span
+            {
+                &.#{$cat}{
+                    border-bottom: em(5) #{$color} solid;
+                }
+
+                @include padding(null em(10));
+            }
+        }
+    }
+}

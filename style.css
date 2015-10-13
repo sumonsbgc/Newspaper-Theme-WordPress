@@ -48,6 +48,168 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.news.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 0.375em solid transparent;
+  border-left: 0.375em solid #A70009;
+  border-top: 0.375em solid transparent;
+  display: inline-block;
+  margin-right: 1%; }
+  .news.triangle.large {
+    display: inline-block;
+    margin-right: 1%;
+    height: 0;
+    width: 0;
+    border-bottom: 0.78125em solid transparent;
+    border-left: 0.78125em solid #A70009;
+    border-top: 0.78125em solid transparent; }
+
+.category-title {
+  width: 100%;
+  margin-right: 0.3125em;
+  margin-left: 0.3125em; }
+  .category-title h2 > span {
+    padding-right: 0.625em;
+    padding-left: 0.625em; }
+    .category-title h2 > span.news {
+      border-bottom: 0.3125em #A70009 solid; }
+
+.sports.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 0.375em solid transparent;
+  border-left: 0.375em solid #304408;
+  border-top: 0.375em solid transparent;
+  display: inline-block;
+  margin-right: 1%; }
+  .sports.triangle.large {
+    display: inline-block;
+    margin-right: 1%;
+    height: 0;
+    width: 0;
+    border-bottom: 0.78125em solid transparent;
+    border-left: 0.78125em solid #304408;
+    border-top: 0.78125em solid transparent; }
+
+.category-title {
+  width: 100%;
+  margin-right: 0.3125em;
+  margin-left: 0.3125em; }
+  .category-title h2 > span {
+    padding-right: 0.625em;
+    padding-left: 0.625em; }
+    .category-title h2 > span.sports {
+      border-bottom: 0.3125em #304408 solid; }
+
+.opinion.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 0.375em solid transparent;
+  border-left: 0.375em solid #7171C6;
+  border-top: 0.375em solid transparent;
+  display: inline-block;
+  margin-right: 1%; }
+  .opinion.triangle.large {
+    display: inline-block;
+    margin-right: 1%;
+    height: 0;
+    width: 0;
+    border-bottom: 0.78125em solid transparent;
+    border-left: 0.78125em solid #7171C6;
+    border-top: 0.78125em solid transparent; }
+
+.category-title {
+  width: 100%;
+  margin-right: 0.3125em;
+  margin-left: 0.3125em; }
+  .category-title h2 > span {
+    padding-right: 0.625em;
+    padding-left: 0.625em; }
+    .category-title h2 > span.opinion {
+      border-bottom: 0.3125em #7171C6 solid; }
+
+.features.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 0.375em solid transparent;
+  border-left: 0.375em solid #CB7835;
+  border-top: 0.375em solid transparent;
+  display: inline-block;
+  margin-right: 1%; }
+  .features.triangle.large {
+    display: inline-block;
+    margin-right: 1%;
+    height: 0;
+    width: 0;
+    border-bottom: 0.78125em solid transparent;
+    border-left: 0.78125em solid #CB7835;
+    border-top: 0.78125em solid transparent; }
+
+.category-title {
+  width: 100%;
+  margin-right: 0.3125em;
+  margin-left: 0.3125em; }
+  .category-title h2 > span {
+    padding-right: 0.625em;
+    padding-left: 0.625em; }
+    .category-title h2 > span.features {
+      border-bottom: 0.3125em #CB7835 solid; }
+
+.columns.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 0.375em solid transparent;
+  border-left: 0.375em solid #48FFFF;
+  border-top: 0.375em solid transparent;
+  display: inline-block;
+  margin-right: 1%; }
+  .columns.triangle.large {
+    display: inline-block;
+    margin-right: 1%;
+    height: 0;
+    width: 0;
+    border-bottom: 0.78125em solid transparent;
+    border-left: 0.78125em solid #48FFFF;
+    border-top: 0.78125em solid transparent; }
+
+.category-title {
+  width: 100%;
+  margin-right: 0.3125em;
+  margin-left: 0.3125em; }
+  .category-title h2 > span {
+    padding-right: 0.625em;
+    padding-left: 0.625em; }
+    .category-title h2 > span.columns {
+      border-bottom: 0.3125em #48FFFF solid; }
+
+.scene.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 0.375em solid transparent;
+  border-left: 0.375em solid #2255FF;
+  border-top: 0.375em solid transparent;
+  display: inline-block;
+  margin-right: 1%; }
+  .scene.triangle.large {
+    display: inline-block;
+    margin-right: 1%;
+    height: 0;
+    width: 0;
+    border-bottom: 0.78125em solid transparent;
+    border-left: 0.78125em solid #2255FF;
+    border-top: 0.78125em solid transparent; }
+
+.category-title {
+  width: 100%;
+  margin-right: 0.3125em;
+  margin-left: 0.3125em; }
+  .category-title h2 > span {
+    padding-right: 0.625em;
+    padding-left: 0.625em; }
+    .category-title h2 > span.scene {
+      border-bottom: 0.3125em #2255FF solid; }
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -1111,15 +1273,6 @@ aside.excerpt {
 /*--------------------------------------------------------------
 ## Cards
 --------------------------------------------------------------*/
-.category-title {
-  width: 100%;
-  margin-right: 0.3125em;
-  margin-left: 0.3125em; }
-  .category-title h2 > span {
-    border-bottom: 0.3125em red solid;
-    padding-right: 0.625em;
-    padding-left: 0.625em; }
-
 .card-row {
   display: -webkit-box;
   display: -moz-box;
@@ -1272,23 +1425,6 @@ aside.excerpt {
 .card-cat {
   margin-left: 1%;
   display: inline; }
-
-.triangle {
-  height: 0;
-  width: 0;
-  border-bottom: 0.375em solid transparent;
-  border-left: 0.375em solid red;
-  border-top: 0.375em solid transparent;
-  display: inline-block;
-  margin-right: 1%; }
-  .triangle.large {
-    display: inline-block;
-    margin-right: 1%;
-    height: 0;
-    width: 0;
-    border-bottom: 0.78125em solid transparent;
-    border-left: 0.78125em solid red;
-    border-top: 0.78125em solid transparent; }
 
 /*--------------------------------------------------------------
 ## Author Box

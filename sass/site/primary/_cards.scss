@@ -1,17 +1,3 @@
-.category-title
-{
-    @include fill-parent();
-    @include margin(null em(5));
-    h2
-    {
-        & > span
-        {
-            border-bottom: em(5) red solid;
-
-            @include padding(null em(10));
-        }
-    }
-}
 .card-row
 {
     @include display(flex);
@@ -62,16 +48,4 @@
 .card-cat{
     margin-left: 1%;
     display: inline;
-}
-.triangle
-{
-    @include triangle(em(12), red, right);
-    display: inline-block;
-    margin-right: 1%;
-    &.large
-    {
-        display: inline-block;
-        margin-right: 1%;
-        @include triangle(em(25), red, right);
-    }
 }
