@@ -78,6 +78,8 @@ function yv4_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	add_image_size( 'articleImage', 1050, 450, array( 'left', 'top' ) );
 }
 endif; // yv4_setup
 add_action( 'after_setup_theme', 'yv4_setup' );
@@ -117,6 +119,8 @@ add_action( 'widgets_init', 'yv4_widgets_init' );
  */
 function yv4_scripts() {
 	wp_enqueue_style( 'yv4-style', get_stylesheet_uri() );
+
+	wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
 	wp_enqueue_script( 'yv4-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
