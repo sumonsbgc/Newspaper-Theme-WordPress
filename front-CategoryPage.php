@@ -46,7 +46,7 @@
     ?>
 </div>
 <aside class = "sidebar-Column">
-    <?php require_once('sidebar.php');?>
+    <?php get_sidebar();?>
 </aside>
 
 <?php
