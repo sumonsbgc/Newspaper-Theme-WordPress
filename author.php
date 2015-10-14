@@ -34,7 +34,7 @@ $numPosts = count_user_posts($curauth->ID);
   </div>
 </div>
 <aside class = "sidebar-Column">
-    <?php require_once('sidebar.php');?>
+    <?php get_sidebar();?>
 </aside>
 <?php
 get_footer();
