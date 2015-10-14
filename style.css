@@ -412,27 +412,21 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
-  line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
   padding: 1.6em; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
   cursor: help; }
 
 mark, ins {
-  background: #fff9c0;
   text-decoration: none; }
 
 big {
@@ -467,7 +461,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #DDD;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -476,7 +470,7 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: #ccc;
+  background-color: #DDD;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -514,45 +508,14 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
+  color: #000;
+  border: 1px solid #000;
   border-radius: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -560,7 +523,7 @@ textarea {
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #262626; }
 
 input[type="text"],
 input[type="email"],
@@ -651,7 +614,7 @@ textarea {
     text-align: center;
     vertical-align: middle;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #FFF;
     padding: 13px 24px 12px;
     display: block;
     margin: 0 auto; }
@@ -659,7 +622,7 @@ textarea {
       .yvMenuContainer .mobileLogo {
         display: none; } }
   .yvMenuContainer .nav-item {
-    color: #FFFFFF;
+    color: #FFF;
     padding: 13px 16px 12px; }
   .yvMenuContainer .yvBrand {
     content: "";
@@ -839,11 +802,11 @@ textarea {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: #f1f1f1;
+    background-color: #DDD;
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #21759b;
+    color: #000;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
