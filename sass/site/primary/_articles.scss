@@ -45,9 +45,7 @@ h1{
 margin-right: em(10);
 background-color: white;
 margin-top:em(5);
-p{
-    @include padding(em(5));
-}
+@include padding(em(5));
 footer{
     @include fill-parent();
     text-align: right;

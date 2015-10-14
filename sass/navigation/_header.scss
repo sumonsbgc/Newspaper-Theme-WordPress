@@ -20,7 +20,7 @@
     }
     nav.mainMenu{
         @include yv-Outer-Container();
-        display: block;
+        display: block !important;
         ul{
             margin-top: 0px;
             margin-bottom: 0px;

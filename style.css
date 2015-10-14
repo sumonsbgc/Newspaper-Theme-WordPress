@@ -432,16 +432,6 @@ mark, ins {
 big {
   font-size: 125%; }
 
-@font-face {
-  font-family: "Roboto Condensed";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/fonts/Roboto-Condensed-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Condensed-Regular.woff2") format("woff2"), url("/fonts/Roboto-Condensed-Regular.woff") format("woff"), url("/fonts/Roboto-Condensed-Regular.ttf") format("truetype"), url("/fonts/Roboto-Condensed-Regular.svg#Roboto Condensed") format("svg"); }
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: normal;
-  src: url("/fonts/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Oswald-Regular.woff2") format("woff2"), url("/fonts/Oswald-Regular.woff") format("woff"), url("/fonts/Oswald-Regular.ttf") format("truetype"), url("/fonts/Oswald-Regular.svg#Oswald") format("svg"); }
 body {
   font-family: "Roboto Condensed", sans-serif; }
 
@@ -559,7 +549,7 @@ textarea {
     max-width: 48em;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    display: block !important;
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
     -ms-transition: max-height 0.5s;
@@ -947,6 +937,9 @@ textarea {
 # Content
 --------------------------------------------------------------*/
 main {
+  margin-top: -0.625em;
+  margin-right: 0;
+  margin-left: 0;
   padding-top: 0;
   padding-right: 0.3125em;
   padding-left: 0.3125em;
@@ -969,7 +962,8 @@ main {
     transition: all 0.5s; }
   @media screen and (min-width: 64em) {
     main {
-      padding-top: 2.5em;
+      margin: 0;
+      padding-top: 0.625em;
       padding-right: 0.3125em;
       padding-left: 0.3125em;
       -webkit-transition: all 0.5s;
@@ -1074,6 +1068,9 @@ main {
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none; }
+
+aside.sidebar-Column {
+  margin: 0; }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -1209,9 +1206,8 @@ main {
 .article {
   margin-right: 0.625em;
   background-color: white;
-  margin-top: 0.3125em; }
-  .article p {
-    padding: 0.3125em; }
+  margin-top: 0.3125em;
+  padding: 0.3125em; }
   .article footer {
     width: 100%;
     text-align: right; }
