@@ -963,7 +963,7 @@ main {
   @media screen and (min-width: 64em) {
     main {
       margin: 0;
-      padding-top: 0.625em;
+      padding-top: 2.5em;
       padding-right: 0.3125em;
       padding-left: 0.3125em;
       -webkit-transition: all 0.5s;
@@ -1151,8 +1151,10 @@ aside.sidebar-Column {
 
 .articleHeader {
   background-color: white;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  margin-top: 0.3125em; }
   .articleHeader h1 {
+    margin-top: 0;
     width: 100%;
     padding: 0.625em;
     font-size: 3.25em; }

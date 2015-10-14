@@ -8,7 +8,7 @@ main{
     }
     @include media($desktop) {
         @include margin(0);
-        @include padding(em(10) em(5) null em(5));
+        @include padding(em(40) em(5) null em(5));
         @include prefixer(transition,all 0.5s, webkit moz ms spec );
     }
     @include yv-Outer-Container();

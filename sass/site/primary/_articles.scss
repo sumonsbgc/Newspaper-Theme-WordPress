@@ -7,7 +7,9 @@
 .articleHeader{
 background-color: white;
 margin-bottom:em(16);
+margin-top: em(5);
 h1{
+    margin-top: 0;
     @include fill-parent();
      @include padding(em(10));
      font-size: em(52);
