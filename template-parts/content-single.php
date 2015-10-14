@@ -8,8 +8,6 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class = "articleHeader">
 	    <h1 class = "articleTitle"><?php the_title(); ?> </h1>
 	    <div class = "article-meta">
@@ -35,15 +33,18 @@
 	<?php endif;
 	endif; ?>
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yv4' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+
+	<div class = "article-column">
+	    <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
+	        <aside class = "excerpt">
+	            <i class = "triangle large news"></i>
+	            <p class = "excerpt-content">
+	                <?php the_excerpt(); ?>
+	            </p>
+	        </aside>
+			<?php the_content();?>
+		</article>
+	</div>
 
 	<footer class="entry-footer">
 		<?php yv4_entry_footer(); ?>

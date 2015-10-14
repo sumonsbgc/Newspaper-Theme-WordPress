@@ -80,9 +80,21 @@ function yv4_setup() {
 	) ) );
 
 	add_image_size( 'articleImage', 1050, 450, array( 'left', 'top' ) );
+	remove_filter('the_excerpt', 'wpautop');
 }
 endif; // yv4_setup
 add_action( 'after_setup_theme', 'yv4_setup' );
+
+function new_excerpt_more( $more ) {
+	return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function add_classes_on_li($classes, $item, $args) {
+  $classes[] = 'nav-item';
+  return $classes;
+}
+add_filter('nav_menu_css_class','add_classes_on_li',1,3);
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
