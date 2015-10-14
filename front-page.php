@@ -25,8 +25,16 @@
 </div>
 <div class = "article-Column">
     <?php
+    $count = -1;
     $catSlugs = ['news','sports','features','scene', 'opinion','columns'];
     foreach ($catSlugs as $catSlug) {
+        $count++;
+        if ($count & 1){?>
+            <div class = "AdvertBlock" style = "height:150px; width:100%; background-color:green;">
+
+            </div>
+    <?php
+        }
         $cat = get_category_by_slug($catSlug);
         if ($cat !== null):
         $args = array(
