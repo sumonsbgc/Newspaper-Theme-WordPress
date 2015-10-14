@@ -16,10 +16,22 @@ $numPosts = count_user_posts($curauth->ID);
                 <?php the_author_meta('description');?>
             </div>
             <p>
-                Number of Articles Written: <?php $numPosts; ?>
+                Number of Articles Written: <?php echo  $numPosts; ?>
             </p>
         </div>
     </div>
+    <div class = "card-row">
+    <?php
+    while (have_posts()) : the_post();
+        get_template_part('template-parts/content','card');
+    endwhile; ?>
+    </div>
+    <div class = "pagination">
+	  <ul class="pager">
+	    <li class="page-prev" style="float:left"><?php next_posts_link('&laquo; Older Entries'); ?></li>
+	    <li class="page-next" style="float:right"><?php previous_posts_link('Newer Entries &raquo;'); ?></li>
+	  </ul>
+  </div>
 </div>
 <aside class = "sidebar-Column">
     <?php require_once('sidebar.php');?>
