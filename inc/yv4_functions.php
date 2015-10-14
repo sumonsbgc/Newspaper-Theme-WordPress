@@ -11,4 +11,5 @@ function yv4_the_category() {
     $top_cat_obj = $top_cat_obj[0];
     return $top_cat_obj->name;
 }
+add_filter( 'jetpack_development_mode', '__return_true' );
 ?>
