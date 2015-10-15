@@ -22,8 +22,7 @@
         @include yv-Outer-Container();
         display: block !important;
         ul{
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin: 0;
             padding-left: 0px;
             @include media($desktop, 12) {
                 @include span-columns(10);
@@ -72,6 +71,7 @@
     /// Colour change for the Logo wrapper
     .yvBrand {
       @include yv-Outer-Container();
+      display:block !important;
       z-index: 150;
     }
     .navWrapper{

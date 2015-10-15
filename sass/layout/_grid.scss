@@ -1,5 +1,4 @@
 main{
-    @include margin(em(-10) em(0) null em(0));
     @include padding(em(0) em(5) null em(5));
     @include prefixer(transition,all 0.5s, webkit moz ms spec );
     &.tucked{
@@ -7,7 +6,6 @@ main{
         @include prefixer(transition,all 0.5s, webkit moz ms spec );
     }
     @include media($desktop) {
-        @include margin(0);
         @include padding(em(40) em(5) null em(5));
         @include prefixer(transition,all 0.5s, webkit moz ms spec );
     }

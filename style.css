@@ -569,8 +569,7 @@ textarea {
         margin-left: auto;
         margin-right: auto; } }
     .yvMenuContainer nav.mainMenu ul {
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin: 0;
       padding-left: 0px; }
       @media screen and (min-width: 64em) {
         .yvMenuContainer nav.mainMenu ul {
@@ -620,6 +619,7 @@ textarea {
     max-width: 48em;
     margin-left: auto;
     margin-right: auto;
+    display: block !important;
     z-index: 150; }
     @media screen and (min-width: 48em) {
       .yvMenuContainer .yvBrand {
@@ -937,9 +937,6 @@ textarea {
 # Content
 --------------------------------------------------------------*/
 main {
-  margin-top: -0.625em;
-  margin-right: 0;
-  margin-left: 0;
   padding-top: 0;
   padding-right: 0.3125em;
   padding-left: 0.3125em;
@@ -962,7 +959,6 @@ main {
     transition: all 0.5s; }
   @media screen and (min-width: 64em) {
     main {
-      margin: 0;
       padding-top: 2.5em;
       padding-right: 0.3125em;
       padding-left: 0.3125em;
