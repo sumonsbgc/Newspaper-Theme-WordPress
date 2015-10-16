@@ -775,6 +775,7 @@ textarea {
     font-size: 1em;
     margin-bottom: 0.4em; }
   .footer p {
+    padding: 0 0.3125em 0.3125em;
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.9em;
     line-height: 1.5em;
@@ -1177,7 +1178,8 @@ aside.sidebar-Column {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 0 0.3125em 0.3125em; }
     .articleHeader .article-meta span {
       -webkit-flex-basis: 12em;
       -moz-flex-basis: 12em;

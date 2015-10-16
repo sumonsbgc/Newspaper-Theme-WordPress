@@ -18,6 +18,7 @@ h1{
      @include display(flex);
      @include justify-content(space-between);
      @include flex-wrap(wrap);
+     @include padding(em(0) em(5) em(5) em(5));
      span{
          @include flex-basis(12em);
          @include flex-shrink(0);

@@ -68,6 +68,7 @@
   }
 
   p {
+    @include padding(em(0) em(5) em(5) em(5));
     color: $footer-disclaimer-color;
     font-size: 0.9em;
     line-height: 1.5em;
