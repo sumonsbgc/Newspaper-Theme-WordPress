@@ -29,12 +29,16 @@ Where as the third iteration of the theme was built using Twitter Boostrap the 4
 York Vision 4 includes support for Infinite Scroll in Jetpack.
 
 # Changelog
+## 0.6.5 - 15 October 2015
+* Fixed the header issues that have meant overlapping ```<main>``` elements
+* Added templated pagination
+* Updated generic category page to deal with no sub categories
 ## 0.6 - 14 October 2015
 * Fixed navigation bugs
 * Improved layout of the front page so that it can handle a set of categories not having enough articles
 * Improved the article view (still need to work on the comments section)
 * Improved height of main
-* Integerated FontAwesome
+* Integrated FontAwesome
 * Added Author page - pagination needs work
 
 ## 0.5 - 10 October 2015
