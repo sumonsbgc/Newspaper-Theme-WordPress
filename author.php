@@ -26,12 +26,9 @@ $numPosts = count_user_posts($curauth->ID);
         get_template_part('template-parts/content','card');
     endwhile; ?>
     </div>
-    <div class = "pagination">
-	  <ul class="pager">
-	    <li class="page-prev" style="float:left"><?php next_posts_link('&laquo; Older Entries'); ?></li>
-	    <li class="page-next" style="float:right"><?php previous_posts_link('Newer Entries &raquo;'); ?></li>
-	  </ul>
-  </div>
+    <?php
+        get_template_part("template-parts/util", "pagination");
+    ?>
 </div>
 <aside class = "sidebar-Column">
     <?php get_sidebar();?>
