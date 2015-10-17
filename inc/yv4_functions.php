@@ -34,7 +34,7 @@ function yv4_the_category() {
 
 /**
 * Returns ID of top-level parent category, or current category if you are viewing a top-level
-*
+* @TODO would be nice if only looked for subcategories in the section its being displayed in
 * @param	string		$catid 		Category ID to be checked
 * @return 	category	$catParent	 top-level parent category
 */
