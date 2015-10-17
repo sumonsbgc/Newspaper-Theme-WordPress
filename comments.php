@@ -48,12 +48,14 @@ if ( post_password_required() ) {
 		<?php endif; // Check for comment navigation. ?>
 
 		<ol class="comment-list">
+			<section class="comments-list">
 			<?php
 				wp_list_comments( array(
 					'style'      => 'ol',
 					'short_ping' => true,
 				) );
 			?>
+			</section>
 		</ol><!-- .comment-list -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
