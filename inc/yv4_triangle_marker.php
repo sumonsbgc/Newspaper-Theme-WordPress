@@ -21,7 +21,6 @@ function yv4_the_parent_category() {
     }
     return "Uncategorised";
 }
-add_filter( 'jetpack_development_mode', '__return_true' );
 
 /**
  * Returns the category of the post
