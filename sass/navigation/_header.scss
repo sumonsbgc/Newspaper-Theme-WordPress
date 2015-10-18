@@ -6,6 +6,10 @@
 
 ///The wrapper around the header menu
 .yvMenuContainer{
+    a{
+        color:white !important;
+        text-decoration:none;
+    }
     background-color: $visionColor;
     ///scrolling navigation
     .navWrapper{

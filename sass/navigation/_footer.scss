@@ -4,7 +4,10 @@
   $footer-color: white;
   $footer-link-color: transparentize($footer-color, 0.1);
   $footer-disclaimer-color: transparentize($footer-color, 0.1);
-
+  a{
+      color:white !important;
+      text-decoration:none;
+  }
   background: $footer-background;
   padding-bottom: $gutter;
   width: 100%;

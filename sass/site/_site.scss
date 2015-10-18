@@ -1,4 +1,12 @@
 // @import "../layout/content-sidebar";
+a{
+    color: $visionColor;
+    text-decoration:none;
+    &:focus, &:hover{
+        color: darken($visionColor, 20%);
+        text-decoration: underline !important;
+    }
+}
 @import "../layout/grid";
 /*--------------------------------------------------------------
 ## Posts and pages

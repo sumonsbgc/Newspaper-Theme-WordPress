@@ -389,10 +389,6 @@ td,
 th {
   padding: 0; }
 
-a {
-  color: white !important;
-  text-decoration: none; }
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -534,6 +530,9 @@ textarea {
 --------------------------------------------------------------*/
 .yvMenuContainer {
   background-color: #CC0000; }
+  .yvMenuContainer a {
+    color: white !important;
+    text-decoration: none; }
   .yvMenuContainer .navWrapper {
     background-color: #990000;
     white-space: nowrap;
@@ -711,6 +710,9 @@ textarea {
   background: #CC0000;
   padding-bottom: 1.618em;
   width: 100%; }
+  .footer a {
+    color: white !important;
+    text-decoration: none; }
   .footer .footer-logo {
     margin-bottom: 2em;
     text-align: center; }
@@ -937,6 +939,13 @@ textarea {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+a {
+  color: #CC0000;
+  text-decoration: none; }
+  a:focus, a:hover {
+    color: #660000;
+    text-decoration: underline !important; }
+
 main {
   padding-top: 0;
   padding-right: 0.3125em;
@@ -1208,6 +1217,8 @@ aside.sidebar-Column {
   background-color: white;
   margin-top: 0.3125em;
   padding: 0.3125em; }
+  .article a {
+    font-weight: bold; }
   .article footer {
     width: 100%;
     text-align: right; }
@@ -1256,6 +1267,9 @@ aside.excerpt {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify; }
+  .card-row a {
+    color: black !important;
+    text-decoration: none; }
   .card-row.first {
     -webkit-box-pack: center;
     -moz-box-pack: center;
@@ -1281,6 +1295,9 @@ aside.excerpt {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin: 0.3125em; }
+  .card a {
+    color: white !important;
+    text-decoration: none; }
   @media screen and (min-width: 48em) {
     .card {
       max-height: none;

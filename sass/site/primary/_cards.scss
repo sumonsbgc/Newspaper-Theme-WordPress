@@ -1,5 +1,9 @@
 .card-row
 {
+    a{
+        color: black !important;
+        text-decoration:none;
+    }
     @include display(flex);
     @include flex-wrap(wrap);
     &.first{
@@ -9,6 +13,10 @@
 }
 .card
 {
+    a{
+        color:white !important;
+        text-decoration:none;
+    }
     $card-color: #000;
     $card-text: #fff;
     $background-color:  rgba(0, 0, 0, 0.64);
