@@ -46,7 +46,7 @@ function my_custom_popular_posts_html_list( $mostpopular, $instance ){
         // Comment count option active, display comments
         if ( $instance['thumbnail'] ) {
             $thumbnail = "<div class = 'images-wrapper'>";
-            $thumbnail .= get_the_post_thumbnail($popular->uid,'thumbnail');
+            $thumbnail .= get_the_post_thumbnail($popular->id,'thumbnail');
             $thumbnail .= "</div>";
         }
         if ( $instance['stats_tag']['comment_count'] ) {
