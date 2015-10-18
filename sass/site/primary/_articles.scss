@@ -22,6 +22,9 @@ h1{
      span{
          @include flex-basis(12em);
          @include flex-shrink(0);
+         .date{
+             @include flex-grow(1);
+         }
          i{
              vertical-align: middle;
              padding-right: em(2);
