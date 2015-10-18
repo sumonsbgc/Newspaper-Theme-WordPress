@@ -3,14 +3,10 @@
  * Very important to note that the slug of the page must match the slug of the category
  */
 $slug = get_post($post)->post_name;
-$cat = get_category_by_slug($slug);
+$mainCategory = get_category_by_slug($slug);
 $count = -1;
-$args = array(
-    'child_of' => $cat->term_id,
-);
-$cats = get_categories($args);
-foreach ($cats as $ChildCat) {
-    $catSlug = $cat->slug;
+$childCats = yv4_get_child_categories_to_display($mainCategory);
+foreach ($childCats as $ChildCat) {
     $count++;
     if ($count & 1){?>
         <div class = "AdvertBlock" style = "height:150px; width:100%; background-color:green;">
@@ -18,17 +14,18 @@ foreach ($cats as $ChildCat) {
         </div>
 <?php
     }
-    if ($cat !== null):
+    if ($ChildCat !== null):
     $args = array(
         'category' => $ChildCat->term_id,
         'posts_per_page'   => 4,
         'post_type'        => 'post',
     );
     $posts = get_posts($args);
+    $catURL = get_category_link($ChildCat->term_id);
     ?>
     <div class = "card-row">
         <div class = "category-title">
-            <h2><span class = "<?php echo $cat->slug; ?>"><?php echo $ChildCat->name;?></span></h2>
+            <h2><span class = "<?php echo $mainCategory->slug; ?>"><a href = "<?php echo esc_url($catURL); ?>"><?php echo $ChildCat->name;?></a></span></h2>
         </div>
     <?php
     foreach($posts as $post){
