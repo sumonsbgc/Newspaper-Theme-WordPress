@@ -30,7 +30,7 @@
 					<s class = "bar"></s>
 					<s class = "bar"></s>
 				</a>
-				<a href = "#" >
+				<a href = "<?php echo esc_html(site_url()); ?>" >
 					<img class='mobileLogo' src='<?php echo get_template_directory_uri() ."/images/vision-logo-mobile.png";?>'/>
 					<img class='desktopLogo' src='<?php echo get_template_directory_uri()."/images/vision-logo-desktop.png";?>'/>
 				</a>

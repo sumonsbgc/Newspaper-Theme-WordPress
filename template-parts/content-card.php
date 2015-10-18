@@ -6,9 +6,15 @@
             </div>
             <div class="card-content">
                 <h2><a href="<?php the_permalink();?>"> <?php the_title();?></a></h2>
-                <div class="card-cat">
-                    <i class="triangle <?php echo strtolower(yv4_the_parent_category());?>"></i><?php echo yv4_the_category()[0]->name;?>
-                </div>
+                <?php
+                $detect = new Mobile_Detect;
+                if(! $detect->isMobile()){?>
+                    <div class="card-cat">
+                        <i class="triangle <?php echo strtolower(yv4_the_parent_category());?>"></i><?php echo yv4_the_category()[0]->name;?>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
         </div>
     </a>
