@@ -19,7 +19,7 @@ $cur_cat_id = get_cat_id( single_cat_title("",false) );
 <aside class = "sidebar-Column">
     <?php
     $slug = get_category_by_slug('sports');
-    if(in_category('Sports')){
+    if(post_is_in_descendant_category($slug->term_id)){
         get_template_part('template-parts/sports','sidebar');
     }
     else{
