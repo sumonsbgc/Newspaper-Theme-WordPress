@@ -36,7 +36,8 @@
 </div>
 <aside class = "sidebar-Column">
     <?php
-    if($slug == "sports"){
+    $slug = get_category_by_slug('sports');
+    if(in_category('Sports')){
         get_template_part('template-parts/sports','sidebar');
     }
     else{
