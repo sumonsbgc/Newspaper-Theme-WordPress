@@ -784,6 +784,15 @@ textarea {
     margin: auto;
     text-align: center; }
 
+select.menu {
+  width: 100%;
+  margin: 0.3125em; }
+
+.sportsNav a {
+  color: #304408; }
+  .sportsNav a:focus, .sportsNav a:hover {
+    color: #50720d; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -868,7 +877,8 @@ textarea {
 .widget .card-wrapper {
   background-color: white;
   margin-bottom: 0.3125em;
-  list-style: none; }
+  list-style: none;
+  max-height: 9.375em; }
   .widget .card-wrapper .images-wrapper {
     float: left;
     display: block;
@@ -1469,7 +1479,8 @@ aside.excerpt {
 .widget .card-wrapper {
   background-color: white;
   margin-bottom: 0.3125em;
-  list-style: none; }
+  list-style: none;
+  max-height: 9.375em; }
   .widget .card-wrapper .images-wrapper {
     float: left;
     display: block;

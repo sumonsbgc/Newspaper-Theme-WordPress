@@ -7,3 +7,16 @@
 ## Footer
 --------------------------------------------------------------*/
 @import "footer";
+
+select.menu{
+    width:100%;
+    @include margin(em(5));
+}
+.sportsNav{
+    a{
+        color:$sportColor;
+        &:focus, &:hover{
+            color:lighten($sportColor,10%);
+        }
+    }
+}
