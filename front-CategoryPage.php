@@ -47,7 +47,7 @@
 </aside>
 
 <?php
-    if($detect->isMobile() && $slug == 'sports'){?>
+    if($detect->isMobile() && post_is_in_descendant_category($slug->term_id)){?>
         <script>
                 // called whenever the select box is changed
                 function mobileMenu(sel) {
