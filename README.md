@@ -1,4 +1,4 @@
-# York Vision 4
+# Newspaper Theme WordPress
 
 Contributors: Christopher King  
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
@@ -8,13 +8,10 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called York Vision 4 based on underscores
+A starter theme called Newspaper Theme WordPress based on underscores
 
 # Description
-
-This is the York Vision 4 Theme that is being created for the UK student newspaper [York Vision](http://www.yorkvision.co.uk). It attempts to integrate mainy of the new features that are available in HTML5 since the York Vision 3 Theme was created in 2013.
-
-Where as the third iteration of the theme was built using Twitter Boostrap the 4th generation is built using the Bourbon family of SASS libraries and therefore has a very different feel to it. The York Vision newspaper is attempting to move away from its generic tabloid aesthetic and towards a modern, cleaner feel.
+A newspaper/magazine theme for wordpress
 
 # Installation
 
