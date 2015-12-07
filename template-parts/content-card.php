@@ -10,7 +10,7 @@
                 $detect = new Mobile_Detect;
                 if(! $detect->isMobile()){?>
                     <div class="card-cat">
-                        <i class="triangle <?php echo strtolower(yv4_the_parent_category());?>"></i><?php echo yv4_the_category()[0]->name;?>
+                        <i class="triangle <?php echo strtolower(news_cjk508_the_parent_category());?>"></i><?php echo news_cjk508_the_category()[0]->name;?>
                     </div>
                 <?php
                 }

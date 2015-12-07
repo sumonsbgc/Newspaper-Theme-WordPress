@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package York_Vision_4
+ * @package Newspaper_Wordpress_Cjk508
  */
 
 ?>
@@ -18,7 +18,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'yv4' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'news_cjk508' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -29,7 +29,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'yv4' ),
+					esc_html__( 'Edit %s', 'news_cjk508' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',

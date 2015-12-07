@@ -6,7 +6,7 @@
 *
 * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
 *
-* @package York_Vision_4
+* @package Newspaper_Wordpress_Cjk508
 */
 
 ?><!DOCTYPE html>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'yv4' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'news_cjk508' ); ?></a>
 		<div id="masthead" role="banner" class='yvMenuContainer site-header'>
 
 			<header class='yvBrand'>

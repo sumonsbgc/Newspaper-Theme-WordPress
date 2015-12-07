@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package York_Vision_4
+ * @package Newspaper_Wordpress_Cjk508
  */
 
 ?>
@@ -14,7 +14,7 @@
         <span id = 'author'><i class="fa fa-2x fa-user"></i> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 				<?php the_author(); ?></a>
 		</span>
-        <span id = "date"><i class="fa fa-2x fa-clock-o"></i><?php yv4_posted_on();?></span>
+        <span id = "date"><i class="fa fa-2x fa-clock-o"></i><?php news_cjk508_posted_on();?></span>
         <span id = "social">
             <i class="fa fa-2x fa-twitter"></i>
             <i class="fa fa-2x fa-facebook"></i>

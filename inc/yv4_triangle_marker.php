@@ -3,7 +3,7 @@
  * Returns the highest level category for the post
  * @return Wordpress Category Object or 'Uncategorised'
  */
-function yv4_the_parent_category() {
+function news_cjk508_the_parent_category() {
     $cats = get_the_category(); // category object
     $top_cat_obj = array();
 
@@ -12,7 +12,7 @@ function yv4_the_parent_category() {
             $top_cat_obj[] = $cat;
         }
         else{
-            $top_cat_obj[] = yv4_category_top_parent_id($cat->term_id);
+            $top_cat_obj[] = news_cjk508_category_top_parent_id($cat->term_id);
         }
     }
     if (sizeof($top_cat_obj) >= 1 ){
@@ -26,7 +26,7 @@ function yv4_the_parent_category() {
  * Returns the category of the post
  * @return Wordpress Category Object or 'Uncategorised'
  */
-function yv4_the_category() {
+function news_cjk508_the_category() {
     $cats = get_the_category(); // category object
     $top_cat_obj = array();
 
@@ -46,7 +46,7 @@ function yv4_the_category() {
 * @return 	category	$catParent	 top-level parent category
 */
 
-function yv4_category_top_parent_id ($catid) {
+function news_cjk508_category_top_parent_id ($catid) {
 
      while ($catid) {
           $cat = get_category($catid); // get the object for the catid

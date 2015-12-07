@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package York_Vision_4
+ * @package Newspaper_Wordpress_Cjk508
  */
 
 get_header(); ?>

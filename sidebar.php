@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package York_Vision_4
+ * @package Newspaper_Wordpress_Cjk508
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

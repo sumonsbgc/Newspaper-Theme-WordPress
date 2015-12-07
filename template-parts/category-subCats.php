@@ -5,7 +5,7 @@
 $slug = get_post($post)->post_name;
 $mainCategory = get_category_by_slug($slug);
 $count = -1;
-$childCats = yv4_get_child_categories_to_display($mainCategory);
+$childCats = news_cjk508_get_child_categories_to_display($mainCategory);
 foreach ($childCats as $ChildCat) {
     $count++;
     if ($count & 1){?>

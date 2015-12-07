@@ -4,7 +4,7 @@ $cur_cat_id = get_cat_id( single_cat_title("",false) );
 ?>
 <div class = "article-Column">
     <div class="category-title">
-        <h2><span class = "<?php echo strtolower(yv4_the_parent_category());?>"><?php  echo get_category($cur_cat_id)->cat_name ;?></span></h2>
+        <h2><span class = "<?php echo strtolower(news_cjk508_the_parent_category());?>"><?php  echo get_category($cur_cat_id)->cat_name ;?></span></h2>
 	</div><!-- .entry-header -->
     <div class = "card-row">
     <?php

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package York_Vision_4
+ * @package Newspaper_Wordpress_Cjk508
  */
 
 get_header(); ?>
@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'yv4' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'news_cjk508' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>

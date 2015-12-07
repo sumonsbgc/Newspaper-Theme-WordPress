@@ -103,7 +103,7 @@ function my_custom_popular_posts_html_list( $mostpopular, $instance ){
         if ($instance['stats_tag']['category']) {
             $post_cat = get_the_category($popular->id);
             $post_cat = (isset($post_cat[0]))
-              ? '<a href="' . get_category_link($post_cat[0]->term_id) . '"><i class = "triangle '.yv4_category_top_parent_id($post_cat[0])->slug.'"></i>' . $post_cat[0]->cat_name . '</a>'
+              ? '<a href="' . get_category_link($post_cat[0]->term_id) . '"><i class = "triangle '.news_cjk508_category_top_parent_id($post_cat[0])->slug.'"></i>' . $post_cat[0]->cat_name . '</a>'
               : '';
 
             if ($post_cat != '') {

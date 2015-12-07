@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package York_Vision_4
+ * @package Newspaper_Wordpress_Cjk508
  */
 
 /**
@@ -13,7 +13,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function yv4_body_classes( $classes ) {
+function news_cjk508_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -21,4 +21,4 @@ function yv4_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'yv4_body_classes' );
+add_filter( 'body_class', 'news_cjk508_body_classes' );
